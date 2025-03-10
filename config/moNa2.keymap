@@ -53,10 +53,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                 &kp T                                      &kp Y        &kp U  &kp I     &kp O     &kp P
-&kp A             &kp S         &kp D         &kp F                 &kp G        &trans         &mkp MB4       &kp H        &kp J  &kp K     &kp L     &kp SEMI
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp B        &lt 3 COMMA    &lt 3 DOT      &kp N        &kp M  &mkp MB1  &mkp MB2  &mt RSHFT UNDERSCORE
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 LA(INT_HENKAN)  &lt 1 SPACE  &lt 2 TAB      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R        &kp T                                      &kp Y        &kp U  &kp I     &kp O     &kp P
+&kp A             &kp S         &kp D         &kp F        &kp G        &trans         &mkp MB4       &kp H        &kp J  &kp K     &kp L     &kp SEMI
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B        &lt 3 COMMA    &lt 3 DOT      &kp N        &kp M  &mkp MB1  &mkp MB2  &mt RSHFT UNDERSCORE
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 LANG1  &lt 1 SPACE  &lt 2 TAB      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
             sensor-bindings =
@@ -66,10 +66,10 @@
 
         layer_1 {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR          &kp PERCENT                    &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
-&kp QUESTION     &kp SQT            &trans    &kp AT_SIGN         &kp CARET    &trans    &trans  &kp PIPE       &kp EQUAL     &kp LEFT_BRACE        &kp LEFT_BRACKET       &kp SLASH
-&trans           &kp GRAVE          &trans    &trans              &kp TILDE    &trans    &trans  &kp PLUS       &kp MINUS     &kp RIGHT_BRACE       &kp RIGHT_BRACKET      &trans
-&trans           &trans             &trans    &lt 4 INT_MUHENKAN  &trans       &trans    &trans  &trans                                                                    &trans
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR   &kp PERCENT                    &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
+&kp QUESTION     &kp SQT            &trans    &kp AT_SIGN  &kp CARET    &trans    &trans  &kp PIPE       &kp EQUAL     &kp LEFT_BRACE        &kp LEFT_BRACKET       &kp SLASH
+&trans           &kp GRAVE          &trans    &trans       &kp TILDE    &trans    &trans  &kp PLUS       &kp MINUS     &kp RIGHT_BRACE       &kp RIGHT_BRACKET      &trans
+&trans           &trans             &trans    &lt 4 LANG2  &trans       &trans    &trans  &trans                                                                    &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
