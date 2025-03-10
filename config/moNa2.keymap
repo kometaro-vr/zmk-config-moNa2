@@ -68,7 +68,7 @@
             bindings = <
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR          &kp PERCENT                    &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
 &kp QUESTION     &kp SQT            &trans    &kp AT_SIGN         &kp CARET    &trans    &trans  &kp PIPE       &kp EQUAL     &kp LEFT_BRACE        &kp LEFT_BRACKET       &kp SLASH
-&trans           &kp GRAVE          &trans    &trans              &kp TILDE    &trans    &trans  &kp PLUS       &kp MINUS     &kp RIGHT_BRACE       &kp RIGHT_BRACKET      &mt RSHFT UNDERSCORE
+&trans           &kp GRAVE          &trans    &trans              &kp TILDE    &trans    &trans  &kp PLUS       &kp MINUS     &kp RIGHT_BRACE       &kp RIGHT_BRACKET      &trans
 &trans           &trans             &trans    &lt 4 INT_MUHENKAN  &trans       &trans    &trans  &trans                                                                    &trans
             >;
 
@@ -78,8 +78,8 @@
         layer_2 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans       &kp HOME  &kp UP_ARROW  &kp END    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mkp MB4  &kp PAGE_UP  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mkp MB5  &kp PG_DN    &trans    &mkp MB1      &mkp MB2   &mkp MB3
+&trans  &trans  &trans  &trans  &trans  &trans    &mkp MB4  &kp PAGE_UP  &kp LEFT  &kp DOWN      &kp RIGHT  &mkp MB5
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp PG_DN    &mkp MB3  &mkp MB1      &mkp MB2   &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans                                          &trans
             >;
 
