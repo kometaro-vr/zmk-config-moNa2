@@ -14,24 +14,9 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <1 0>;
-        };
-
-        enter {
-            bindings = <&kp ENTER>;
-            key-positions = <20 21>;
-        };
-
-        bs {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <8 9>;
-        };
-
         esc {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 9>;
+            key-positions = <0 1>;
         };
     };
 
@@ -92,10 +77,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp AMPERSAND  &kp SQT   &kp UP_ARROW  &kp RIGHT_PARENTHESIS  &kp PIPE
-&trans  &trans  &trans  &trans  &trans  &trans    &mkp MB4  &kp EQUAL      &kp LEFT  &kp DOWN      &kp RIGHT              &kp TILDE
-&trans  &trans  &trans  &trans  &trans  &trans    &mkp MB5  &trans         &trans    &mkp MB1      &mkp MB2               &kp UNDERSCORE
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans                                                        &trans
+&trans  &trans  &trans  &trans  &trans                      &trans       &kp HOME  &kp UP_ARROW  &kp END    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mkp MB4  &kp PAGE_UP  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mkp MB5  &kp PG_DN    &trans    &mkp MB1      &mkp MB2   &mkp MB3
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans                                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -114,10 +99,10 @@
 
         layer_4 {
             bindings = <
-&trans  &kp LS(W)  &kp W   &trans  &kp R                          &kp LS(F1)  &kp LS(F2)  &kp LS(F3)  &kp LS(F4)  &trans
-&trans  &kp A      &kp S   &kp D   &kp C   &trans    &trans       &kp LS(F5)  &kp LS(F6)  &kp LS(F7)  &kp LS(F8)  &trans
-&trans  &trans     &trans  &kp V   &kp Z   &trans    &bootloader  &kp RS(F1)  &trans      &trans      &trans      &trans
-&trans  &trans     &trans  &trans  &trans  &trans    &trans       &trans                                          &trans
+&trans  &trans  &kp W   &kp LS(W)  &kp R                          &kp LS(F1)  &kp LS(F2)  &kp LS(F3)  &kp LS(F4)  &trans
+&trans  &kp A   &kp S   &kp D      &kp C   &trans    &trans       &kp LS(F5)  &kp LS(F6)  &kp LS(F7)  &kp LS(F8)  &trans
+&trans  &trans  &trans  &kp V      &kp Z   &trans    &bootloader  &kp RS(F1)  &trans      &trans      &trans      &trans
+&trans  &trans  &trans  &trans     &trans  &trans    &trans       &trans                                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
