@@ -115,10 +115,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &kp W   &kp LS(W)  &kp R                          &kp LS(F1)  &kp LS(F2)  &kp LS(F3)  &kp LS(F4)  &trans
-&trans  &kp A   &kp S   &kp D      &kp C   &trans    &trans       &kp LS(F5)  &kp LS(F6)  &kp LS(F7)  &kp LS(F8)  &trans
-&trans  &trans  &trans  &kp V      &kp Z   &trans    &bootloader  &kp RS(F1)  &trans      &trans      &trans      &trans
-&trans  &trans  &trans  &trans     &trans  &trans    &trans       &trans                                          &trans
+&trans  &trans  &kp W   &kp LS(W)  &kp R                             &kp LS(F1)  &kp LS(F2)  &kp LS(F3)  &kp LS(F4)  &trans
+&trans  &kp A   &kp S   &kp D      &kp C      &trans    &trans       &kp LS(F5)  &kp LS(F6)  &kp LS(F7)  &kp LS(F8)  &trans
+&trans  &trans  &trans  &kp V      &kp Z      &trans    &bootloader  &kp RS(F1)  &trans      &trans      &trans      &trans
+&trans  &trans  &trans  &trans     &kp SPACE  &trans    &trans       &trans                                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
