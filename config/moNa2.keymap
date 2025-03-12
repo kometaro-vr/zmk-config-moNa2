@@ -21,13 +21,18 @@
         };
 
         bt1 {
-            bindings = <&bt BT_SEL 1>;
+            bindings = <&bt BT_SEL 0>;
             key-positions = <10 21>;
         };
 
         bt0 {
-            bindings = <&bt BT_SEL 0>;
+            bindings = <&bt BT_SEL 1>;
             key-positions = <11 20>;
+        };
+
+        bt_clr {
+            bindings = <&bt BT_CLR>;
+            key-positions = <10 16>;
         };
     };
 
@@ -78,8 +83,8 @@
         layer_1 {
             bindings = <
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR   &kp PERCENT                    &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
-&kp QUESTION     &kp SQT            &trans    &kp AT_SIGN  &kp CARET    &trans    &trans  &kp PIPE       &kp EQUAL     &kp LEFT_BRACE        &kp LEFT_BRACKET       &kp SLASH
-&trans           &kp GRAVE          &trans    &trans       &kp TILDE    &trans    &trans  &kp PLUS       &kp MINUS     &kp RIGHT_BRACE       &kp RIGHT_BRACKET      &trans
+&kp QUESTION     &kp SQT            &trans    &kp AT_SIGN  &kp CARET    &trans    &trans  &kp PIPE       &kp EQUAL     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH
+&trans           &kp GRAVE          &trans    &trans       &kp TILDE    &trans    &trans  &kp PLUS       &kp MINUS     &kp LBKT              &kp RIGHT_BRACKET      &trans
 &trans           &trans             &trans    &lt 4 LANG2  &trans       &trans    &trans  &trans                                                                    &trans
             >;
 
