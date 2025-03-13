@@ -69,10 +69,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R        &kp T                                  &kp Y          &kp U  &kp I     &kp O     &kp P
-&kp A             &kp S         &kp D         &kp F        &kp G        &trans         &mkp MB4   &kp H          &kp J  &kp K     &kp L     &kp SEMI
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B        &lt 3 COMMA    &lt 3 DOT  &kp N          &kp M  &mkp MB1  &mkp MB2  &mt RSHFT MINUS
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 LANG1  &lt 1 SPACE  &lt 2 TAB      &kp ENTER  &kp BACKSPACE                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R        &kp T                                    &kp Y          &kp U  &kp I     &kp O     &kp P
+&kp A             &kp S         &kp D         &kp F        &kp G        &trans         &mkp MB4     &kp H          &kp J  &kp K     &kp L     &kp SEMI
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V        &kp B        &lt 3 COMMA    &lt 3 DOT    &kp N          &kp M  &mkp MB1  &mkp MB2  &mt RSHFT MINUS
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 4 LANG1  &lt 1 SPACE  &lt 2 TAB      &lt 3 ENTER  &kp BACKSPACE                             &kp DEL
             >;
 
             sensor-bindings =
@@ -85,7 +85,7 @@
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR   &kp PERCENT                    &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
 &kp QUESTION     &kp SQT            &trans    &kp AT_SIGN  &kp CARET    &trans    &trans  &kp PIPE       &kp EQUAL     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH
 &trans           &kp GRAVE          &trans    &trans       &kp TILDE    &trans    &trans  &kp PLUS       &kp MINUS     &kp LBKT              &kp RIGHT_BRACKET      &trans
-&trans           &trans             &trans    &lt 4 LANG2  &trans       &trans    &trans  &trans                                                                    &trans
+&trans           &trans             &trans    &trans       &trans       &trans    &trans  &trans                                                                    &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -104,10 +104,10 @@
 
         layer_3 {
             bindings = <
-&kp F1              &kp F2   &kp F3  &kp F4      &kp F5                     &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_ASTERISK
-&kp F6              &kp F7   &kp F8  &kp F9      &kp F10  &trans    &trans  &kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
-&mt LEFT_SHIFT F11  &kp F12  &trans  &kp LA(F4)  &trans   &trans    &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &mt RSHIFT KP_PLUS
-&trans              &trans   &trans  &trans      &trans   &trans    &trans  &trans                                                              &trans
+&kp F1              &kp F2   &kp F3  &kp F4          &kp F5                     &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_ASTERISK
+&kp F6              &kp F7   &kp F8  &kp F9          &kp F10  &trans    &trans  &kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
+&mt LEFT_SHIFT F11  &kp F12  &trans  &kp LA(F4)      &trans   &trans    &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &mt RSHIFT KP_PLUS
+&trans              &trans   &trans  &kp LANGUAGE_2  &trans   &trans    &trans  &trans                                                              &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
