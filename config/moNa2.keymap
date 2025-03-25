@@ -37,7 +37,12 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <30 25>;
+            key-positions = <13 18>;
+        };
+
+        alt+F4 {
+            bindings = <&kp RA(F4)>;
+            key-positions = <0 9>;
         };
     };
 
