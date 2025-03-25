@@ -39,11 +39,6 @@
             bindings = <&kp ENTER>;
             key-positions = <13 18>;
         };
-
-        alt+F4 {
-            bindings = <&kp LA(F4)>;
-            key-positions = <0 9>;
-        };
     };
 
     macros {
