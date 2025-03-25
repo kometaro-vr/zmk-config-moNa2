@@ -41,7 +41,7 @@
         };
 
         alt+F4 {
-            bindings = <&kp RA(F4)>;
+            bindings = <&kp LA(F4)>;
             key-positions = <0 9>;
         };
     };
