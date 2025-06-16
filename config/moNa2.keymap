@@ -89,7 +89,7 @@
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp NUMBER_5                            &kp NUMBER_6           &kp NUMBER_7          &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0
 &kp MINUS     &kp SLASH     &kp COLON     &kp SEMICOLON    &kp LEFT_PARENTHESIS  &trans    &trans  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH  &kp AMPERSAND  &kp AT_SIGN   &kp DOUBLE_QUOTES
-&kp PERIOD    &kp COMMA     &kp QUESTION  &kp EXCLAMATION  &kp SQT               &trans    &trans  &kp LEFT               &kp UP_ARROW          &kp DOWN       &kp RIGHT     &kp SQT
+&kp PERIOD    &kp COMMA     &kp QUESTION  &kp EXCLAMATION  &kp SQT               &trans    &trans  &kp LEFT               &kp DOWN_ARROW        &kp UP_ARROW   &kp RIGHT     &kp SQT
 &trans        &trans        &trans        &trans           &trans                &trans    &trans  &trans                                                                    &trans
             >;
 
@@ -98,10 +98,10 @@
 
         layer_5 {
             bindings = <
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp HASH                         &kp PERCENT       &kp CARET    &kp ASTERISK   &kp PLUS  &kp EQUAL
-&kp UNDERSCORE    &kp NON_US_BACKSLASH  &kp PIPE        &kp TILDE        &kp LESS_THAN  &trans    &trans  &kp GREATER_THAN  &trans       &trans         &trans    &trans
-&trans            &trans                &trans          &trans           &trans         &trans    &trans  &kp HOME          &kp PAGE_UP  &kp PAGE_DOWN  &kp END   &trans
-&trans            &trans                &trans          &trans           &trans         &trans    &trans  &trans                                                  &trans
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp HASH                         &kp PERCENT       &kp CARET  &kp ASTERISK  &kp PLUS  &kp EQUAL
+&kp UNDERSCORE    &kp NON_US_BACKSLASH  &kp PIPE        &kp TILDE        &kp LESS_THAN  &trans    &trans  &kp GREATER_THAN  &trans     &trans        &trans    &trans
+&trans            &trans                &trans          &trans           &trans         &trans    &trans  &kp HOME          &kp PG_DN  &kp PG_UP     &kp END   &trans
+&trans            &trans                &trans          &trans           &trans         &trans    &trans  &trans                                               &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
