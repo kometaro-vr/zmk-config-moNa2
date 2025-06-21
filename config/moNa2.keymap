@@ -109,10 +109,10 @@
 
         layer_3 {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &none                        &kp KP_SLASH     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ASTERISK
-&kp F5  &kp F6   &kp F7   &kp F8   &kp LSHFT  &trans    &trans  &kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS
-&kp F9  &kp F10  &kp F11  &kp F12  &kp RSHFT  &trans    &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &mt RSHIFT KP_PLUS
-&trans  &trans   &trans   &trans   &trans     &trans    &trans  &trans                                                              &trans
+&kp F1  &kp F2   &kp F3   &kp F4   &none                        &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
+&kp F5  &kp F6   &kp F7   &kp F8   &kp LSHFT  &trans    &trans  &none       &none         &none         &none         &none
+&kp F9  &kp F10  &kp F11  &kp F12  &kp RSHFT  &trans    &trans  &none       &none         &none         &none         &trans
+&trans  &trans   &trans   &trans   &trans     &trans    &trans  &trans                                                &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
