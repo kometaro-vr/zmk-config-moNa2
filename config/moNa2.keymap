@@ -100,7 +100,7 @@
             bindings = <
 &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp HASH                             &kp PERCENT       &kp CARET  &kp ASTERISK  &kp PLUS  &kp EQUAL
 &kp UNDERSCORE    &kp NON_US_BACKSLASH  &kp PIPE        &kp TILDE        &kp LESS_THAN  &trans    &trans      &kp GREATER_THAN  &trans     &trans        &trans    &trans
-&trans            &trans                &trans          &trans           &trans         &trans    &trans      &kp HOME          &kp PG_DN  &kp PG_UP     &kp END   &trans
+&mo 4             &trans                &trans          &trans           &trans         &trans    &trans      &kp HOME          &kp PG_DN  &kp PG_UP     &kp END   &trans
 &trans            &trans                &trans          &trans           &trans         &trans    &kp DELETE  &kp LANG2                                            &trans
             >;
 
@@ -120,10 +120,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans       &kp HOME  &kp UP_ARROW  &kp END    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mkp MB4  &kp PAGE_UP  &kp LEFT  &kp DOWN      &kp RIGHT  &mkp MB5
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp PG_DN    &mkp MB3  &mkp MB1      &mkp MB2   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans                                          &trans
+&none   &none   &none   &none   &none                     &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS
+&none   &none   &none   &none   &none   &trans    &trans  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS
+&trans  &none   &none   &none   &none   &trans    &trans  &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                            &kp KP_ENTER
             >;
 
             sensor-bindings = <&scroll_up_down>;
