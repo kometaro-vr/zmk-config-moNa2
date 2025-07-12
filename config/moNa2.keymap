@@ -29,6 +29,11 @@
             bindings = <&bt BT_CLR>;
             key-positions = <10 16>;
         };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 0>;
+        };
     };
 
     macros {
@@ -65,9 +70,9 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R  &kp T                                 &kp Y  &kp U  &kp I     &kp O     &kp P
-&kp A             &kp S         &kp D         &kp F  &kp G      &trans      &mkp MB5       &kp H  &kp J  &kp K     &kp L     &kp ENTER
+&kp A             &kp S         &kp D         &kp F  &kp G      &trans      &mkp MB5       &kp H  &kp J  &kp K     &kp L     &kp SEMI
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V  &kp B      &mkp MB3    &mkp MB4       &kp N  &kp M  &mkp MB1  &mkp MB2  &mt RSHFT MINUS
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mo 2  &kp SPACE  &kp TAB     &kp BACKSPACE  &mo 1                             &kp ESC
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mo 1  &kp SPACE  &kp TAB     &kp BACKSPACE  &mo 2                             &kp ENTER
             >;
 
             sensor-bindings =
@@ -77,10 +82,10 @@
 
         layer_1 {
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH  &kp DOLLAR   &kp PERCENT                         &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
-&kp QUESTION     &kp SQT            &none     &kp AT_SIGN  &kp RS(SEMI)  &trans    &trans      &kp PIPE       &kp EQUAL     &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SEMICOLON
-&none            &kp GRAVE          &none     &kp CARET    &kp TILDE     &trans    &trans      &kp PLUS       &kp MINUS     &kp LBKT              &kp RIGHT_BRACKET      &kp SLASH
-&trans           &trans             &trans    &kp LANG1    &trans        &trans    &kp DELETE  &trans                                                                    &mo 3
+&mo 3      &kp DOUBLE_QUOTES  &kp HASH     &kp DOLLAR  &kp PERCENT                         &kp AMPERSAND   &kp EXCLAMATION  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
+&kp CARET  &kp SQT            &kp AT_SIGN  &kp PLUS    &kp ASTERISK  &trans    &trans      &kp PIPE        &kp EQUAL        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SLASH
+&kp TILDE  &kp GRAVE          &none        &kp MINUS   &kp SLASH     &trans    &trans      &none           &kp QUESTION     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE
+&trans     &trans             &trans       &trans      &trans        &trans    &kp DELETE  &kp LANGUAGE_1                                                                &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -88,10 +93,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                        &trans       &kp HOME  &kp UP_ARROW  &kp END     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans      &kp PAGE_UP  &kp LEFT  &kp UP        &kp RIGHT   &kp COLON
-&trans  &trans  &trans  &trans  &trans  &trans    &trans      &kp PG_DN    &kp LEFT  &kp COMMA     &kp PERIOD  &trans
-&mo 3   &trans  &trans  &trans  &trans  &trans    &kp DELETE  &kp LANG2                                        &trans
+&kp ESCAPE  &none   &none   &none           &none                         &kp PG_UP  &kp HOME  &kp UP_ARROW  &kp END     &mo 3
+&none       &none   &none   &none           &none   &trans    &trans      &kp PG_DN  &kp LEFT  &kp UP        &kp RIGHT   &none
+&none       &none   &none   &none           &none   &trans    &trans      &none      &none     &kp COMMA     &kp PERIOD  &kp UNDERSCORE
+&trans      &trans  &trans  &kp LANGUAGE_2  &trans  &trans    &kp DELETE  &trans                                         &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
