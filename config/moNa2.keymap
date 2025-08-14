@@ -34,6 +34,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 0>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <17 14>;
+        };
     };
 
     macros {
@@ -104,7 +109,7 @@
 
         layer_3 {
             bindings = <
-&kp F1  &kp F2   &kp F3   &kp F4   &none                              &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_ASTERISK
+&kp F1  &kp F2   &kp F3   &kp F4   &kp ESC                            &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_ASTERISK
 &kp F5  &kp F6   &kp F7   &kp F8   &kp LSHFT        &trans    &trans  &kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS
 &kp F9  &kp F10  &kp F11  &kp F12  &kp RIGHT_SHIFT  &trans    &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS
 &trans  &trans   &trans   &trans   &trans           &trans    &trans  &trans                                                              &kp ENTER
