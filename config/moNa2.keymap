@@ -35,11 +35,6 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 0>;
         };
-
-        mousetest {
-            bindings = <&none>;
-            key-positions = <38 26 27 30 31 32>;
-        };
     };
 
     macros {
