@@ -17,14 +17,14 @@
 
 &zip_temp_layer {
     require-prior-idle-ms = <200>;        /* キー入力後200msは発動禁止（誤爆防止） */
-    excluded-positions = <12 13 14>;      /* マウス用キー指定 */
+    excluded-positions = <27 28 31 32 33 39>;      /* マウス用キー指定 */
 }
 
 / {
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        input-processors = <&zip_temp_layer 5 250>;
+        input-processors = <&zip_temp_layer 5 100000>;
     };
 };
 
