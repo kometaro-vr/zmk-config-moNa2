@@ -20,7 +20,7 @@
     excluded-positions = <27 28 31 32 33 39>;    /* 押してもAMLから離脱しない対象キー指定 */
 };
 
-/{　
+/ {
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
