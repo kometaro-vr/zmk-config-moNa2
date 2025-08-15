@@ -15,14 +15,12 @@
             ;
 };
 
-/{
-    zip_temp_layer_mouse: zip_temp_layer_mouse {
-        compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>;
-        require-prior-idle-ms = <200>;               /* キー入力後200msは発動禁止（誤爆防止） */
-        excluded-positions = <27 28 31 32 33 39>;    /* 押してもAMLから離脱しない対象キー指定 */
-    };
+&zip_temp_layer {
+    require-prior-idle-ms = <200>;               /* キー入力後200msは発動禁止（誤爆防止） */
+    excluded-positions = <27 28 31 32 33 39>;    /* 押してもAMLから離脱しない対象キー指定 */
+}
 
+/{　
     trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
