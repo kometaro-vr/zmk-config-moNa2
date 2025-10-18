@@ -8,11 +8,11 @@
 #define SCROLL 6
 
 &mt {
-    flavor = "hold-preferred";
+    flavor = "balanced";
     quick-tap-ms = <0>;
 };
 
-&lt { flavor = "hold-preferred"; };
+&lt { flavor = "balanced"; };
 
 / {
     combos {
