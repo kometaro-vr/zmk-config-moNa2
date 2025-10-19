@@ -1,5 +1,4 @@
-/include/ <dt-bindings/zmk/keys.h>
-/include/ <dt-bindings/zmk/matrix_transform.h>
+#include <dt-bindings/zmk/matrix_transform.h>
 
 / {
     chosen {
@@ -47,6 +46,5 @@
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder>
         triggers-per-rotation = <10>;
-        bindings = <&inc_dec_kp KC_VOLU KC_VOLD>;
     };
 };
