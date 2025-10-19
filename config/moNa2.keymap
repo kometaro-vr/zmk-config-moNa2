@@ -97,9 +97,9 @@
 
         layer_1 {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                    &kp NUMBER_6    &kp N7     &kp N8            &kp N9             &kp N0
-&none         &none         &none         &none         &kp CARET               &trans  &kp UNDERSCORE  &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
-&none         &none         &none         &none         &none         &none     &trans  &none           &none      &kp LESS_THAN     &kp GREATER_THAN   &none
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                    &kp NUMBER_6  &kp N7     &kp N8            &kp N9             &kp N0
+&none         &none         &none         &none         &none                   &trans  &kp TILDE     &kp CARET  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&none         &none         &none         &none         &none         &none     &trans  &none         &kp DOT    &kp LESS_THAN     &kp GREATER_THAN   &none
 &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans
             >;
 
@@ -108,10 +108,10 @@
 
         layer_2 {
             bindings = <
-&kp EXCLAMATION  &kp DQT    &kp HASH  &kp DOLLAR  &kp PERCENT                    &kp AMPERSAND  &kp PIPE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
-&kp QUESTION     &kp SQT    &none     &none       &kp TILDE              &trans  &kp MINUS      &kp PLUS      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT
-&none            &kp GRAVE  &none     &none       &none        &none     &none   &kp SLASH      &kp ASTERISK  &kp COMMA             &kp PERIOD             &none
-&trans           &trans     &trans    &trans      &trans       &trans    &trans  &trans                                                                    &trans
+&kp EXCLAMATION  &kp DQT    &kp HASH  &kp DOLLAR  &kp PERCENT                       &kp AMPERSAND  &kp PIPE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
+&kp QUESTION     &kp SQT    &none     &kp EQUAL   &kp UNDERSCORE            &trans  &kp MINUS      &kp PLUS      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT
+&none            &kp GRAVE  &none     &none       &none           &none     &none   &kp SLASH      &kp ASTERISK  &kp COMMA             &kp PERIOD             &none
+&trans           &trans     &trans    &trans      &trans          &trans    &trans  &trans                                                                    &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
