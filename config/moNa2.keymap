@@ -77,6 +77,14 @@
             display-name = "Toggle Layer Off";
             toggle-mode = "off";
         };
+
+        mt_rt: mt_retro_tap {
+          compatible = "zmk,behavior-hold-tap";
+          #binding-cells = <2>;
+          flavor = "balanced";
+          retro-tap;
+          bindings = <&kp>, <&kp>;
+        };
     };
 
     keymap {
