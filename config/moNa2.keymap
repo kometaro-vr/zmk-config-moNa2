@@ -33,14 +33,19 @@
             key-positions = <26 27 15>;
         };
 
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <1 0>;
-        };
-
         middle_click {
             bindings = <&mkp MB3>;
             key-positions = <30 31>;
+        };
+
+        lang1 {
+            bindings = <&kp LANG1>;
+            key-positions = <38 39>;
+        };
+
+        lang2 {
+            bindings = <&kp LANG2>;
+            key-positions = <37 40>;
         };
     };
 
