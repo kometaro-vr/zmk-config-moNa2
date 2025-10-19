@@ -101,9 +101,11 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = < ... >; // List of keys on the right side of the keyboard
             hold-trigger-on-release;
         };
+
         hmr: home_row_mod_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -112,6 +114,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = < ... >; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
         };
@@ -122,10 +125,10 @@
 
         default_layer {
             bindings = <
-&kp Q              &kp W          &kp E         &kp R                      &kp T                               &kp Y      &kp U           &kp I        &kp O          &kp P
-&mt_rt LEFT_GUI A  &mt_rt LALT S  &mt LSHIFT D  &mt_rt LCTRL F             &lt 3 G                   &none     &lt 3 H    &mt_rt RCTRL J  &mt RSHFT K  &mt_rt RALT L  &mt_rt RIGHT_GUI SEMI
-&kp Z              &kp X          &kp C         &kp V                      &kp B        &none        &none     &kp N      &kp M           &mkp MB1     &mkp MB2       &kp SLASH
-&kp ESC            &kp LEFT_WIN   &mo 4         &lt 3 LANG_ZENKAKUHANKAKU  &lt 2 SPACE  &lt 1 TAB    &kp BSPC  &kp ENTER                                              &kp DEL
+&kp Q            &kp W         &kp E         &kp R                      &kp T                               &kp Y      &kp U         &kp I        &kp O        &kp P
+&hml LEFT_GUI A  &hml LALT S   &mt LSHIFT D  &hml LCTRL F               &lt 3 G                   &none     &lt 3 H    &hmr RCTRL J  &mt RSHFT K  &hmr RALT L  &hmr RIGHT_GUI SEMI
+&kp Z            &kp X         &kp C         &kp V                      &kp B        &none        &none     &kp N      &kp M         &mkp MB1     &mkp MB2     &kp SLASH
+&kp ESC          &kp LEFT_WIN  &mo 4         &lt 3 LANG_ZENKAKUHANKAKU  &lt 2 SPACE  &lt 1 TAB    &kp BSPC  &kp ENTER                                          &kp DEL
             >;
 
             sensor-bindings =
