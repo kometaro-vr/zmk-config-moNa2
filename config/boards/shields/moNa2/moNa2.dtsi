@@ -46,5 +46,6 @@
         compatible = "zmk,keymap-sensors";
         sensors = <&left_encoder &right_encoder>;
         triggers-per-rotation = <10>;
+        bindings = <&inc_dec_kp KC_VOLU KC_VOLD>, <&none>;
     };
 };
