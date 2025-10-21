@@ -152,7 +152,7 @@
 &kp EXCLAMATION  &kp DQT    &kp HASH  &kp DOLLAR  &kp PERCENT                       &kp AMPERSAND  &kp PIPE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
 &kp QUESTION     &kp SQT    &none     &kp EQUAL   &kp UNDERSCORE            &trans  &kp MINUS      &kp PLUS      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT
 &none            &kp GRAVE  &none     &none       &none           &none     &none   &kp SLASH      &kp ASTERISK  &kp COMMA             &kp PERIOD             &none
-&trans           &trans     &trans    &trans      &trans          &trans    &trans  &trans                                                                    &trans
+&trans           &trans     &trans    &trans      &trans          &trans    &trans  &kp ENTER                                                                 &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
