@@ -125,10 +125,10 @@
 
         default_layer {
             bindings = <
-&kp Q        &kp W         &kp E         &kp R                &kp T                               &kp Y                      &kp U  &kp I     &kp O     &kp P
-&kp A        &kp S         &kp D         &kp F                &kp G                     &none     &kp H                      &kp J  &kp K     &kp L     &kp ENTER
-&mt LSHFT Z  &kp X         &kp C         &kp V                &kp B        &none        &none     &kp N                      &kp M  &mkp MB1  &mkp MB2  &mt RSHFT SLASH
-&kp ESC      &kp LEFT_WIN  &kp LEFT_ALT  &mt LCTRL LC(SPACE)  &lt 2 SPACE  &lt 1 TAB    &kp BSPC  &lt 3 LANG_ZENKAKUHANKAKU                             &kp DEL
+&kp Q        &kp W         &kp E         &kp R                &kp T                               &kp Y      &kp U  &kp I     &kp O     &kp P
+&kp A        &kp S         &kp D         &kp F                &kp G                     &none     &kp H      &kp J  &kp K     &kp L     &lt 3 SEMICOLON
+&mt LSHFT Z  &kp X         &kp C         &kp V                &kp B        &none        &none     &kp N      &kp M  &mkp MB1  &mkp MB2  &mt RSHFT SLASH
+&kp ESC      &kp LEFT_WIN  &kp LEFT_ALT  &mt LCTRL LC(SPACE)  &lt 2 SPACE  &lt 1 TAB    &kp BSPC  &kp ENTER                             &kp DEL
             >;
 
             sensor-bindings =
@@ -160,10 +160,10 @@
 
         layer_3 {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4      &kp F5                           &none     &kp PG_UP  &kp UP    &none      &none
-&kp F6   &kp F7   &kp F8  &kp F9      &kp F10                  &trans  &kp HOME  &kp LEFT   &kp DOWN  &kp RIGHT  &kp END
-&kp F11  &kp F12  &none   &none       &none      &none         &none   &none     &kp PG_DN  &kp DOWN  &mkp MB4   &mkp MB5
-&trans   &trans   &trans  &kp RSHIFT  &kp SPACE  &kp LSHIFT    &trans  &trans                                    &trans
+&none     &none           &kp UP_ARROW    &kp PG_UP        &none                              &kp F1    &kp F2   &kp F3   &kp F4   &none
+&kp HOME  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END                  &trans    &kp F5    &kp F6   &kp F7   &kp F8   &none
+&none     &none           &none           &kp PG_DN        &none      &none         &none     &kp F9    &kp F10  &kp F11  &kp F12  &none
+&trans    &trans          &trans          &kp RSHIFT       &kp SPACE  &kp LSHIFT    &mkp MB4  &mkp MB5                             &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
