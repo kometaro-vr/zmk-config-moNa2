@@ -16,18 +16,10 @@
 };
 
 / {
-    trackball_listener {
+    trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-    };
-};
-
-/ {
-    // XYデバイス用 listener（PMW3610とは無関係）
-    tb_xy_listener: tb_xy_listener {
-        compatible = "zmk,input-listener";
-        device = <&YOUR_XY_LABEL>;   // ← ここを実ラベルに置き換え
     };
 };
 
