@@ -62,12 +62,10 @@
     };
 };
 
-/* scrollレイヤーが有効な間だけ、PMW(=XY)の動きをスクロールに“置換” */
 &trackball_listener {
     scroller {
-        layers = <6>;                               // ← , と . の同時押しで mo 6 を発火させる想定
-        input-processors = <&zip_xy_to_scroll_mapper>; // XY移動 → ホイールイベント
-        // 任意: 量や向きの調整
-        // input-processors = <&zip_xy_to_scroll_mapper &zip_scroll_scaler 3 1>;
+        layers = <6>; 
+        input-processors = <&zip_xy_to_scroll_mapper>;
+        input-processors = <&zip_xy_to_scroll_mapper &zip_scroll_scaler 3 1>;
     };
 }
