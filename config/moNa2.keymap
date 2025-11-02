@@ -33,8 +33,8 @@
             key-positions = <26 27 15>;
         };
 
-        middle_click {
-            bindings = <&mkp MB3>;
+        trackball_scroll {
+            bindings = <&mo 6>;
             key-positions = <30 31>;
         };
 
@@ -46,6 +46,11 @@
         lang2 {
             bindings = <&kp LANG2>;
             key-positions = <37 40>;
+        };
+
+        middl_click {
+            bindings = <&mkp MB3>;
+            key-positions = <30 29>;
         };
     };
 
