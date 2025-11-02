@@ -1,4 +1,5 @@
 #include "moNa2.dtsi"
+#include <input/processors.dtsi>
 
 &default_transform {
     col-offset = <6>;
@@ -19,6 +20,14 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
+    };
+};
+
+/ {
+    // XYデバイス用 listener（PMW3610とは無関係）
+    tb_xy_listener: tb_xy_listener {
+        compatible = "zmk,input-listener";
+        device = <&YOUR_XY_LABEL>;   // ← ここを実ラベルに置き換え
     };
 };
 
@@ -61,4 +70,12 @@
     };
 };
 
-
+/* scrollレイヤーが有効な間だけ、PMW(=XY)の動きをスクロールに“置換” */
+&trackball_listener {
+    scroller {
+        layers = <6>;                               // ← , と . の同時押しで mo 6 を発火させる想定
+        input-processors = <&zip_xy_to_scroll_mapper>; // XY移動 → ホイールイベント
+        // 任意: 量や向きの調整
+        // input-processors = <&zip_xy_to_scroll_mapper &zip_scroll_scaler 3 1>;
+    };
+}
