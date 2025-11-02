@@ -20,7 +20,7 @@
     // input-processors = <&zip_xy_scaler 3 2>;
 
     scroller {
-        layers = <3>;                          // ← SCROLL レイヤー番号に合わせる
+        layers = <6>;                          // ← SCROLL レイヤー番号に合わせる
         input-processors = <&zip_xy_to_scroll_mapper>; // XY移動→ホイール/水平ホイールに変換
         // process-next; // 他のProcessorも続けて適用したい時に有効化
     };
