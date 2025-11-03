@@ -52,6 +52,26 @@
             bindings = <&mkp MB3>;
             key-positions = <30 31>;
         };
+
+        LeftShift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <12 11>;
+        };
+
+        RightShift {
+            bindings = <&kp RSHIFT>;
+            key-positions = <18 19>;
+        };
+
+        LeftCtrl {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <12 13>;
+        };
+
+        RightCtrl {
+            bindings = <&kp RIGHT_CONTROL>;
+            key-positions = <18 17>;
+        };
     };
 
     macros {
