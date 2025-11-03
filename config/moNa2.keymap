@@ -65,32 +65,32 @@
 
         LeftCtrl {
             bindings = <&kp LEFT_CONTROL>;
-            key-positions = <11 13>;
+            key-positions = <14 12>;
         };
 
         RightCtrl {
             bindings = <&kp RIGHT_CONTROL>;
-            key-positions = <19 17>;
+            key-positions = <16 18>;
         };
 
         LeftAlt {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <11 12>;
+            key-positions = <11 13>;
         };
 
         RightAlt {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <19 18>;
+            key-positions = <19 17>;
         };
 
         LeftGui {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <10 11>;
+            key-positions = <11 12>;
         };
 
         RightGui {
             bindings = <&kp RIGHT_GUI>;
-            key-positions = <20 19>;
+            key-positions = <19 18>;
         };
     };
 
