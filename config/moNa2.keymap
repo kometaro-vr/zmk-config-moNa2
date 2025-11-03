@@ -85,12 +85,12 @@
 
         LeftGui {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <11 12>;
+            key-positions = <12 10>;
         };
 
         RightGui {
             bindings = <&kp RIGHT_GUI>;
-            key-positions = <19 18>;
+            key-positions = <18 20>;
         };
     };
 
