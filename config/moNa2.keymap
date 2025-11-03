@@ -145,7 +145,7 @@
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                    &kp NUMBER_6    &kp N7   &kp N8         &kp N9            &kp N0
 &none         &kp AT_SIGN   &none         &kp MINUS     &kp PLUS                &trans  &kp UNDERSCORE  &none    &none          &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&none         &none         &none         &kp SLASH     &kp ASTERISK  &none     &trans  &none           &kp DOT  &kp LESS_THAN  &kp GREATER_THAN  &none
+&none         &none         &none         &kp SLASH     &kp ASTERISK  &trans    &trans  &none           &kp DOT  &kp LESS_THAN  &kp GREATER_THAN  &none
 &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans
             >;
 
@@ -156,7 +156,7 @@
             bindings = <
 &kp EXCLAMATION  &kp DQT    &kp HASH  &kp DOLLAR  &kp PERCENT                    &kp AMPERSAND  &kp PIPE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
 &kp QUESTION     &kp SQT    &none     &kp CARET   &kp TILDE              &trans  &kp MINUS      &kp GREATER_THAN  &kp EQUAL             &kp LEFT_BRACE         &kp RIGHT_BRACE
-&none            &kp GRAVE  &none     &none       &none        &none     &none   &kp PLUS       &kp ASTERISK      &kp COMMA             &kp PERIOD             &kp SLASH
+&none            &kp GRAVE  &none     &none       &none        &trans    &trans  &kp PLUS       &kp ASTERISK      &kp COMMA             &kp PERIOD             &kp SLASH
 &trans           &trans     &trans    &trans      &trans       &trans    &trans  &trans                                                                        &trans
             >;
 
@@ -167,7 +167,7 @@
             bindings = <
 &kp F1   &kp F2   &kp F3  &kp F4      &kp F5                             &none      &kp HOME         &kp UP_ARROW    &kp END         &none
 &kp F6   &kp F7   &kp F8  &kp F9      &kp F10                  &trans    &kp PG_UP  &kp RIGHT_ARROW  &kp DOWN_ARROW  &kp LEFT_ARROW  &none
-&kp F11  &kp F12  &none   &none       &none      &none         &none     &kp PG_DN  &none            &none           &none           &none
+&kp F11  &kp F12  &none   &none       &none      &trans        &trans    &kp PG_DN  &none            &none           &none           &none
 &trans   &trans   &trans  &kp RSHIFT  &kp SPACE  &kp LSHIFT    &mkp MB4  &mkp MB5                                                    &trans
             >;
 
@@ -200,7 +200,7 @@
             bindings = <
 &kp F1   &kp F2   &kp F3  &kp F4      &kp F5                             &none      &kp HOME         &kp UP_ARROW    &kp END         &none
 &kp F6   &kp F7   &kp F8  &kp F9      &kp F10                  &trans    &kp PG_UP  &kp RIGHT_ARROW  &kp DOWN_ARROW  &kp LEFT_ARROW  &none
-&kp F11  &kp F12  &none   &none       &none      &none         &none     &kp PG_DN  &none            &none           &none           &none
+&kp F11  &kp F12  &none   &none       &none      &trans        &trans    &kp PG_DN  &none            &none           &none           &none
 &trans   &trans   &trans  &kp RSHIFT  &kp SPACE  &kp LSHIFT    &mkp MB4  &mkp MB5                                                    &trans
             >;
 
