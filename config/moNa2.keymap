@@ -65,22 +65,22 @@
 
         LeftCtrl {
             bindings = <&kp LEFT_CONTROL>;
-            key-positions = <12 11>;
+            key-positions = <11 13>;
         };
 
         RightCtrl {
             bindings = <&kp RIGHT_CONTROL>;
-            key-positions = <18 19>;
+            key-positions = <19 17>;
         };
 
         LeftAlt {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <13 11>;
+            key-positions = <11 12>;
         };
 
         RightAlt {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <17 19>;
+            key-positions = <19 18>;
         };
 
         LeftGui {
