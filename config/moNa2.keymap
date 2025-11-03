@@ -198,9 +198,9 @@
 
         SCROLL {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4      &kp F5                             &none      &kp HOME         &kp UP_ARROW    &kp END         &none
-&kp F6   &kp F7   &kp F8  &kp F9      &kp F10                  &trans    &kp PG_UP  &kp RIGHT_ARROW  &kp DOWN_ARROW  &kp LEFT_ARROW  &none
-&kp F11  &kp F12  &none   &none       &none      &trans        &trans    &kp PG_DN  &none            &none           &none           &none
+&kp F1   &kp F2   &kp F3  &kp F4      &kp F5                             &none      &none           &kp UP_ARROW    &none            &none
+&kp F6   &kp F7   &kp F8  &kp F9      &kp F10                  &trans    &kp PG_UP  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&kp F11  &kp F12  &none   &none       &none      &trans        &trans    &kp PG_DN  &kp HOME        &none           &kp END          &none
 &trans   &trans   &trans  &kp RSHIFT  &kp SPACE  &kp LSHIFT    &mkp MB4  &mkp MB5                                                    &trans
             >;
 
