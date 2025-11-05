@@ -53,13 +53,13 @@
             key-positions = <30 31>;
         };
 
-        LeftShift {
-            bindings = <&kp LEFT_SHIFT>;
+        fnscroll-l {
+            bindings = <&mo 6>;
             key-positions = <12 13>;
         };
 
-        RightShift {
-            bindings = <&kp RSHIFT>;
+        fnscroll-r {
+            bindings = <&mo 6>;
             key-positions = <18 17>;
         };
 
