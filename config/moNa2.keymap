@@ -93,24 +93,9 @@
             key-positions = <18 20>;
         };
 
-        LeftShift2 {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <11 12>;
-        };
-
-        RightShift2 {
-            bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <18 19>;
-        };
-
-        LeftShift3 {
-            bindings = <&kp LEFT_SHIFT>;
-            key-positions = <10 11>;
-        };
-
-        RightShift3 {
-            bindings = <&kp RIGHT_SHIFT>;
-            key-positions = <20 19>;
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
         };
     };
 
