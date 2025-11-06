@@ -55,12 +55,12 @@
 
         fnscroll-l {
             bindings = <&mo 6>;
-            key-positions = <12 13>;
+            key-positions = <13 11>;
         };
 
         fnscroll-r {
             bindings = <&mo 6>;
-            key-positions = <18 17>;
+            key-positions = <17 19>;
         };
 
         LeftCtrl {
@@ -75,37 +75,27 @@
 
         LeftAlt {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <11 13>;
+            key-positions = <11 14>;
         };
 
         RightAlt {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <19 17>;
+            key-positions = <19 16>;
         };
 
         LeftGui {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <12 10>;
+            key-positions = <10 13>;
         };
 
         RightGui {
             bindings = <&kp RIGHT_GUI>;
-            key-positions = <18 20>;
+            key-positions = <20 17>;
         };
 
         esc {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
-        };
-
-        fnscroll2-l {
-            bindings = <&mo 6>;
-            key-positions = <11 14>;
-        };
-
-        fnscroll2-r {
-            bindings = <&mo 6>;
-            key-positions = <16 19>;
         };
     };
 
