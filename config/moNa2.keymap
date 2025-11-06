@@ -97,6 +97,16 @@
             bindings = <&kp ESC>;
             key-positions = <0 1>;
         };
+
+        fnscroll2-l {
+            bindings = <&mo 6>;
+            key-positions = <11 14>;
+        };
+
+        fnscroll2-r {
+            bindings = <&mo 6>;
+            key-positions = <16 19>;
+        };
     };
 
     macros {
