@@ -35,7 +35,7 @@
 
         trackball_scroll {
             bindings = <&mo 6>;
-            key-positions = <30 29>;
+            key-positions = <30 31>;
         };
 
         lang1 {
@@ -50,7 +50,7 @@
 
         middl_click {
             bindings = <&mkp MB3>;
-            key-positions = <30 31>;
+            key-positions = <30 29>;
         };
 
         fnscroll-l {
