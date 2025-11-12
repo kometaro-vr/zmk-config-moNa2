@@ -55,42 +55,42 @@
 
         fnscroll-l {
             bindings = <&mo 6>;
-            key-positions = <13 11>;
+            key-positions = <13 12>;
         };
 
         fnscroll-r {
             bindings = <&mo 6>;
-            key-positions = <17 19>;
+            key-positions = <17 18>;
         };
 
         LeftCtrl {
             bindings = <&kp LEFT_CONTROL>;
-            key-positions = <14 12>;
+            key-positions = <11 13>;
         };
 
         RightCtrl {
             bindings = <&kp RIGHT_CONTROL>;
-            key-positions = <16 18>;
+            key-positions = <17 19>;
         };
 
         LeftAlt {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <11 14>;
+            key-positions = <10 13>;
         };
 
         RightAlt {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <19 16>;
+            key-positions = <17 20>;
         };
 
         LeftGui {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <10 13>;
+            key-positions = <10 12>;
         };
 
         RightGui {
             bindings = <&kp RIGHT_GUI>;
-            key-positions = <20 17>;
+            key-positions = <20 18>;
         };
 
         esc {
@@ -178,7 +178,7 @@
 &kp Q  &kp W         &kp E         &kp R  &kp T                                    &kp Y      &kp U  &kp I     &kp O     &kp P
 &kp A  &kp S         &kp D         &kp F  &kp G                          &mo 6     &kp H      &kp J  &kp K     &kp L     &kp SEMICOLON
 &kp Z  &kp X         &kp C         &kp V  &kp B        &mo 6             &none     &kp N      &kp M  &mkp MB1  &mkp MB2  &kp SLASH
-&mo 6  &kp LEFT_WIN  &kp LEFT_ALT  &mo 1  &lt 2 SPACE  &mt LSHIFT TAB    &kp BSPC  &kp ENTER                             &kp DEL
+&mo 6  &kp LEFT_WIN  &kp LEFT_ALT  &mo 1  &lt 2 SPACE  &mt LSHIFT TAB    &kp BSPC  &kp ENTER                             &mo 6
             >;
 
             sensor-bindings =
@@ -199,10 +199,10 @@
 
         layer_2 {
             bindings = <
-&kp EXCLAMATION  &kp DQT    &kp HASH   &kp DOLLAR  &kp PERCENT                    &kp AMPERSAND  &kp PIPE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
-&kp QUESTION     &kp SQT    &kp EQUAL  &kp CARET   &kp TILDE              &trans  &kp MINUS      &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none
-&none            &kp GRAVE  &none      &none       &none        &trans    &trans  &kp PLUS       &kp ASTERISK      &kp COMMA             &kp PERIOD             &kp SLASH
-&trans           &trans     &trans     &trans      &trans       &trans    &trans  &kp RC(SPACE)                                                                 &trans
+&kp EXCLAMATION  &kp DQT    &kp HASH   &kp DOLLAR  &kp PERCENT                     &kp AMPERSAND  &kp PIPE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
+&kp QUESTION     &kp SQT    &kp EQUAL  &kp CARET   &kp TILDE              &trans   &kp MINUS      &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none
+&none            &kp GRAVE  &none      &none       &none        &trans    &trans   &kp PLUS       &kp ASTERISK      &kp COMMA             &kp PERIOD             &kp SLASH
+&trans           &trans     &trans     &trans      &trans       &trans    &kp DEL  &kp RC(SPACE)                                                                 &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
