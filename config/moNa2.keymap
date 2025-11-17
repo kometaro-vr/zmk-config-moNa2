@@ -182,7 +182,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp PG_DN PG_UP>,
+                <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
@@ -194,7 +194,7 @@
 &trans        &trans        &trans        &trans        &trans        &trans    &trans  &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp END HOME>;
         };
 
         layer_2 {
@@ -205,7 +205,7 @@
 &trans           &trans     &trans     &trans      &trans          &trans    &kp DEL  &kp RC(SPACE)                                                                 &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp END HOME>;
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         layer_3 {
@@ -249,7 +249,7 @@
 &trans   &trans   &trans  &kp RSHIFT  &kp SPACE  &kp LSHIFT    &mkp MB4  &mkp MB5                                                    &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
         };
 
         layer_7 {
