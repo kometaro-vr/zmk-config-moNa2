@@ -75,22 +75,22 @@
 
         LeftAlt {
             bindings = <&kp LEFT_ALT>;
-            key-positions = <10 13>;
+            key-positions = <14 12>;
         };
 
         RightAlt {
             bindings = <&kp RIGHT_ALT>;
-            key-positions = <17 20>;
+            key-positions = <16 18>;
         };
 
         LeftGui {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <10 12>;
+            key-positions = <14 11>;
         };
 
         RightGui {
             bindings = <&kp RIGHT_GUI>;
-            key-positions = <20 18>;
+            key-positions = <16 19>;
         };
 
         esc {
@@ -178,11 +178,11 @@
 &kp Q  &kp W         &kp E         &kp R  &kp T                                    &kp Y      &kp U  &kp I     &kp O     &kp P
 &kp A  &kp S         &kp D         &kp F  &kp G                          &mo 6     &kp H      &kp J  &kp K     &kp L     &kp SEMICOLON
 &kp Z  &kp X         &kp C         &kp V  &kp B        &mo 6             &none     &kp N      &kp M  &mkp MB1  &mkp MB2  &kp SLASH
-&mo 6  &kp LEFT_WIN  &kp LEFT_ALT  &mo 1  &lt 2 SPACE  &mt LSHIFT TAB    &kp BSPC  &kp ENTER                             &mo 6
+&mo 1  &kp LEFT_WIN  &kp LEFT_ALT  &mo 6  &lt 2 SPACE  &mt LSHIFT TAB    &kp BSPC  &kp ENTER                             &kp DEL
             >;
 
             sensor-bindings =
-                <&scroll_up_down>,
+                <&inc_dec_kp PG_DN PG_UP>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
@@ -205,7 +205,7 @@
 &trans           &trans     &trans     &trans      &trans          &trans    &kp DEL  &kp RC(SPACE)                                                                 &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp END HOME>;
         };
 
         layer_3 {
