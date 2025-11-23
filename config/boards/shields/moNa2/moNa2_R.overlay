@@ -1,5 +1,6 @@
 #include "moNa2.dtsi"
 #include <input/processors.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>   /* ★ 追加 */
 
 &default_transform {
     col-offset = <6>;
@@ -20,9 +21,43 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        scroller {
-            layers = <3 6>;
-            input-processors = <&zip_xy_to_scroll_mapper>;
+        /* ★ レイヤ3: 縦スクロールのみ（横を殺す） */
+        scroller_vert {
+            layers = <3>;
+            input-processors = <
+                &zip_xy_to_scroll_mapper     /* XY → 縦横スクロールに変換 */
+                &zip_scroll_x_scaler 0 1     /* HWHEEL(横)を0倍=無効 → 縦だけ残る */
+            >;
+        };
+
+        /* ★ レイヤ6: 横スクロールのみ（縦を殺す） */
+        scroller_horiz {
+            layers = <6>;
+            input-processors = <
+                &zip_xy_to_scroll_mapper     /* XY → 縦横スクロールに変換 */
+                &zip_scroll_y_scaler 0 1     /* WHEEL(縦)を0倍=無効 → 横だけ残る */
+            >;
+        };
+    };
+
+    /* ★ 縦・横それぞれを個別にいじるためのスケーラ定義 */
+    input_processors {
+        /* 横スクロール(HWHEEL)だけを見るスケーラ */
+        zip_scroll_x_scaler: zip_scroll_x_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_HWHEEL>;
+            track-remainders;
+        };
+
+        /* 縦スクロール(WHEEL)だけを見るスケーラ */
+        zip_scroll_y_scaler: zip_scroll_y_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_WHEEL>;
+            track-remainders;
         };
     };
 };
@@ -62,6 +97,5 @@
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         automouse-layer = <5>;
         scroll-layers = <6>;
-
     };
 };
