@@ -21,29 +21,35 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        /* レイヤ2: 縦スクロールのみ（横を殺す） */
-        scroller_vert {
-            layers = <2>;
+        /* レイヤ6: 縦＋横スクロール（今までの 6 と同じ挙動） */
+        scroller_both {
+            layers = <6>;
             input-processors = <
-                /* ★ ここではセンサーのスクロールをそのまま受けて、
-                   横スクロール(HWHEEL)だけ 0 倍にする */
-                &zip_scroll_x_scaler 0 1
+                &zip_xy_to_scroll_mapper
             >;
         };
 
-        /* レイヤ3: 横スクロールのみ（縦を殺す） */
+        /* レイヤ2: 縦スクロールのみ（横を0倍にして殺す） */
+        scroller_vert {
+            layers = <2>;
+            input-processors = <
+                &zip_xy_to_scroll_mapper
+                &zip_scroll_x_scaler 0 1   /* HWHEEL を 0 倍 → 縦だけ残る */
+            >;
+        };
+
+        /* レイヤ3: 横スクロールのみ（縦を0倍にして殺す） */
         scroller_horiz {
             layers = <3>;
             input-processors = <
-                /* ★ 縦スクロール(WHEEL)だけ 0 倍にする */
-                &zip_scroll_y_scaler 0 1
+                &zip_xy_to_scroll_mapper
+                &zip_scroll_y_scaler 0 1   /* WHEEL を 0 倍 → 横だけ残る */
             >;
         };
     };
 
-    /* 縦・横それぞれを個別にいじるためのスケーラ定義（そのまま流用） */
+    /* スクロール用スケーラ定義 */
     input_processors {
-        /* 横スクロール(HWHEEL)だけを見るスケーラ */
         zip_scroll_x_scaler: zip_scroll_x_scaler {
             compatible = "zmk,input-processor-scaler";
             #input-processor-cells = <2>;
@@ -52,7 +58,6 @@
             track-remainders;
         };
 
-        /* 縦スクロール(WHEEL)だけを見るスケーラ */
         zip_scroll_y_scaler: zip_scroll_y_scaler {
             compatible = "zmk,input-processor-scaler";
             #input-processor-cells = <2>;
@@ -96,10 +101,10 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+
         automouse-layer = <5>;
 
-        /* ★ ここを <6> ではなく <2 3> に変える
-           → センサーのスクロールモードを 2 / 3 に移動 */
-        scroll-layers = <2 3>;
+        /* ★ ドライバ側スクロールは使わないのでコメントアウトする */
+        /* scroll-layers = <6>; */
     };
 };
