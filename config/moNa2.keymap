@@ -5,8 +5,6 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 5
-#define VSCROLL 3
-#define HSCROLL 2
 #define SCROLL 6
 
 &mt {
@@ -245,13 +243,13 @@
 
         SCROLL {
             bindings = <
-&kp N1   &kp F2   &kp F3  &kp F4      &kp F5                             &none      &none           &kp UP_ARROW    &none            &none
-&kp F6   &kp F7   &kp F8  &kp F9      &kp F10                  &trans    &kp PG_UP  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
-&kp F11  &kp F12  &none   &none       &none      &trans        &trans    &kp PG_DN  &kp HOME        &none           &kp END          &none
-&trans   &trans   &trans  &kp RSHIFT  &kp SPACE  &kp LSHIFT    &mkp MB4  &mkp MB5                                                    &trans
+&kp EXCLAMATION  &kp DQT    &kp HASH   &kp DOLLAR  &kp PERCENT                        &kp AMPERSAND  &kp PIPE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BSLH
+&kp QUESTION     &kp SQT    &kp EQUAL  &kp TILDE   &kp UNDERSCORE            &trans   &kp MINUS      &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN
+&none            &kp GRAVE  &none      &none       &kp CARET       &trans    &trans   &kp PLUS       &kp ASTERISK      &kp COMMA             &kp PERIOD             &kp SLASH
+&trans           &trans     &trans     &trans      &trans          &trans    &kp DEL  &kp RC(SPACE)                                                                 &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
 
         layer_7 {
