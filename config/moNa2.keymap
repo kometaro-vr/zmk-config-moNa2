@@ -188,10 +188,10 @@
 
         layer_1 {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4          &kp F5                                &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5
-&kp F6   &kp F7   &kp F8  &kp F9          &kp F10                       &trans  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&kp F11  &kp F12  &none   &none           &none      &trans             &trans  &kp DOT       &kp PLUS      &kp MINUS     &kp ASTRK     &kp SLASH
-&trans   &trans   &trans  &kp LEFT_SHIFT  &kp SPACE  &kp RIGHT_SHIFT    &trans  &trans
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                                &kp KP_PLUS      &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10               &trans          &kp DOT          &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MULTIPLY
+&kp F11  &kp F12  &none   &none   &none      &trans     &trans          &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DIVIDE
+&trans   &trans   &trans  &trans  &kp SPACE  &kp TAB    &kp LEFT_SHIFT  &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp END HOME>;
