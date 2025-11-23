@@ -21,18 +21,18 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        /* ★ レイヤ3: 縦スクロールのみ（横を殺す） */
+        /* ★ レイヤ2: 縦スクロールのみ（横を殺す） */
         scroller_vert {
-            layers = <3>;
+            layers = <2>;
             input-processors = <
                 &zip_xy_to_scroll_mapper     /* XY → 縦横スクロールに変換 */
                 &zip_scroll_x_scaler 0 1     /* HWHEEL(横)を0倍=無効 → 縦だけ残る */
             >;
         };
 
-        /* ★ レイヤ6: 横スクロールのみ（縦を殺す） */
+        /* ★ レイヤ3: 横スクロールのみ（縦を殺す） */
         scroller_horiz {
-            layers = <6>;
+            layers = <3>;
             input-processors = <
                 &zip_xy_to_scroll_mapper     /* XY → 縦横スクロールに変換 */
                 &zip_scroll_y_scaler 0 1     /* WHEEL(縦)を0倍=無効 → 横だけ残る */
