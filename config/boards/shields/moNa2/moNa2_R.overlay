@@ -1,6 +1,6 @@
-#include "moNa2.dtsi"
+#include "moNa2.dtsi" 
 #include <input/processors.dtsi>
-#include <zephyr/dt-bindings/input/input-event-codes.h>   /* ★ 追加 */
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 &default_transform {
     col-offset = <6>;
@@ -21,26 +21,27 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        /* ★ レイヤ2: 縦スクロールのみ（横を殺す） */
+        /* レイヤ2: 縦スクロールのみ（横を殺す） */
         scroller_vert {
             layers = <2>;
             input-processors = <
-                &zip_xy_to_scroll_mapper     /* XY → 縦横スクロールに変換 */
-                &zip_scroll_x_scaler 0 1     /* HWHEEL(横)を0倍=無効 → 縦だけ残る */
+                /* ★ ここではセンサーのスクロールをそのまま受けて、
+                   横スクロール(HWHEEL)だけ 0 倍にする */
+                &zip_scroll_x_scaler 0 1
             >;
         };
 
-        /* ★ レイヤ3: 横スクロールのみ（縦を殺す） */
+        /* レイヤ3: 横スクロールのみ（縦を殺す） */
         scroller_horiz {
             layers = <3>;
             input-processors = <
-                &zip_xy_to_scroll_mapper     /* XY → 縦横スクロールに変換 */
-                &zip_scroll_y_scaler 0 1     /* WHEEL(縦)を0倍=無効 → 横だけ残る */
+                /* ★ 縦スクロール(WHEEL)だけ 0 倍にする */
+                &zip_scroll_y_scaler 0 1
             >;
         };
     };
 
-    /* ★ 縦・横それぞれを個別にいじるためのスケーラ定義 */
+    /* 縦・横それぞれを個別にいじるためのスケーラ定義（そのまま流用） */
     input_processors {
         /* 横スクロール(HWHEEL)だけを見るスケーラ */
         zip_scroll_x_scaler: zip_scroll_x_scaler {
@@ -96,6 +97,9 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         automouse-layer = <5>;
-        scroll-layers = <6>;
+
+        /* ★ ここを <6> ではなく <2 3> に変える
+           → センサーのスクロールモードを 2 / 3 に移動 */
+        scroll-layers = <2 3>;
     };
 };
