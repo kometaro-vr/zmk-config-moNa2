@@ -5,6 +5,8 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 5
+#define VSCROLL 3
+#define HSCROLL 2
 #define SCROLL 6
 
 &mt {
@@ -191,7 +193,7 @@
 &kp F1   &kp F2   &kp F3  &kp F4  &kp F5                                &kp KP_PLUS      &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS
 &kp F6   &kp F7   &kp F8  &kp F9  &kp F10               &trans          &kp DOT          &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MULTIPLY
 &kp F11  &kp F12  &none   &none   &none      &trans     &trans          &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DIVIDE
-&trans   &trans   &trans  &trans  &kp SPACE  &kp TAB    &kp LEFT_SHIFT  &kp RIGHT_SHIFT
+&trans   &trans   &trans  &trans  &kp SPACE  &kp TAB    &kp LEFT_SHIFT  &kp RIGHT_SHIFT                                       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp END HOME>;
