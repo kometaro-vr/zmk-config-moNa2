@@ -34,7 +34,7 @@
         };
 
         trackball_scroll {
-            bindings = <&mo 6>;
+            bindings = <&mo 8>;
             key-positions = <30 31>;
         };
 
@@ -54,12 +54,12 @@
         };
 
         fnscroll-l {
-            bindings = <&mo 6>;
+            bindings = <&mo 8>;
             key-positions = <13 12>;
         };
 
         fnscroll-r {
-            bindings = <&mo 6>;
+            bindings = <&mo 8>;
             key-positions = <17 18>;
         };
 
@@ -180,15 +180,33 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W         &kp E         &kp R  &kp T                                    &kp Y      &kp U  &kp I     &kp O     &kp P
-&kp A  &kp S         &kp D         &kp F  &kp G                          &mo 6     &kp H      &kp J  &kp K     &kp L     &kp SEMICOLON
-&kp Z  &kp X         &kp C         &kp V  &kp B        &mo 6             &none     &kp N      &kp M  &mkp MB1  &mkp MB2  &kp SLASH
-&mo 1  &kp LEFT_WIN  &kp LEFT_ALT  &mo 3  &lt 6 SPACE  &mt LSHIFT TAB    &kp BSPC  &kp ENTER                             &kp DEL
+&kp Q  &kp W         &kp E         &kp R  &kp T                                      &kp Y      &kp U  &kp I     &kp O     &kp P
+&kp A  &kp S         &kp D         &kp F  &kp G                     &mo 8            &kp H      &kp J  &kp K     &kp L     &kp SEMICOLON
+&kp Z  &kp X         &kp C         &kp V  &kp B        &mo 8        &none            &kp N      &kp M  &mkp MB1  &mkp MB2  &kp SLASH
+&mo 3  &kp LEFT_WIN  &kp LEFT_ALT  &mo 5  &lt 8 SPACE  &lt 2 TAB    &lt 1 BACKSPACE  &kp ENTER                             &kp DEL
             >;
 
             sensor-bindings =
                 <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        };
+
+        HRM_R {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans       &trans        &trans         &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mt RCTRL J  &mt RSHIFT K  &mt_rt RALT L  &mt RGUI SEMICOLON
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans        &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                            &trans
+            >;
+        };
+
+        HRM_L {
+            bindings = <
+&trans      &trans      &trans        &trans       &trans                           &trans  &trans  &trans  &trans  &trans
+&mt LGUI A  &mt LALT S  &mt LSHIFT D  &mt LCTRL F  &trans            &trans         &trans  &trans  &trans  &trans  &trans
+&trans      &trans      &trans        &trans       &trans  &trans    &trans         &trans  &trans  &trans  &trans  &trans
+&trans      &trans      &trans        &trans       &trans  &trans    &kp BACKSPACE  &trans                          &trans
+            >;
         };
 
         layer_1 {
@@ -255,15 +273,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
-        };
-
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
-            >;
         };
     };
 };
