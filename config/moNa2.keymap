@@ -183,7 +183,7 @@
 &kp Q    &kp W         &kp E         &kp R  &kp T                                    &kp Y      &kp U  &kp I     &kp O     &kp P
 &kp A    &kp S         &kp D         &kp F  &kp G                     &none          &kp H      &kp J  &kp K     &kp L     &kp SEMICOLON
 &lt 2 Z  &kp X         &kp C         &kp V  &kp B        &trans       &none          &kp N      &kp M  &mkp MB1  &mkp MB2  &lt 1 SLASH
-&mo 3    &kp LEFT_WIN  &kp LEFT_ALT  &mo 8  &lt 4 SPACE  &kp LSHFT    &kp BACKSPACE  &kp ENTER                             &kp DEL
+&mo 3    &kp LEFT_WIN  &kp LEFT_ALT  &mo 4  &lt 6 SPACE  &kp LSHFT    &kp BACKSPACE  &kp ENTER                             &kp DEL
             >;
 
             sensor-bindings =
@@ -220,15 +220,15 @@
             sensor-bindings = <&inc_dec_kp END HOME>;
         };
 
-        layer_2 {
+        layer_3 {
             bindings = <
-&kp EXCLAMATION  &kp DQT    &kp HASH   &kp DOLLAR  &kp PERCENT                       &kp AMPERSAND  &kp PIPE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&kp QUESTION     &kp SQT    &kp EQUAL  &kp TILDE   &kp UNDERSCORE            &trans  &kp MINUS      &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN
-&none            &kp GRAVE  &none      &none       &kp CARET       &trans    &trans  &kp PLUS       &kp ASTERISK      &kp COMMA             &kp PERIOD             &kp SLASH
-&trans           &trans     &trans     &trans      &trans          &trans    &trans  &none                                                                         &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                      &kp PG_UP  &kp LEFT_BRACKET  &kp UP_ARROW    &kp RIGHT_BRACKET  &none
+&kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0            &trans    &kp HOME   &kp LEFT          &kp DOWN_ARROW  &kp RIGHT          &kp END
+&kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH     &kp DOT       &trans    &trans    &kp PG_DN  &kp LESS_THAN     &none           &kp GREATER_THAN   &none
+&trans        &trans        &trans        &trans        &trans        &trans    &mkp MB4  &mkp MB5                                                        &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         MOUSE {
@@ -251,28 +251,6 @@
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
-        };
-
-        layer_3 {
-            bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                      &kp PG_UP  &kp LEFT_BRACKET  &kp UP_ARROW    &kp RIGHT_BRACKET  &none
-&kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0            &trans    &kp HOME   &kp LEFT          &kp DOWN_ARROW  &kp RIGHT          &kp END
-&kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH     &kp DOT       &trans    &trans    &kp PG_DN  &kp LESS_THAN     &none           &kp GREATER_THAN   &none
-&trans        &trans        &trans        &trans        &trans        &trans    &mkp MB4  &mkp MB5                                                        &trans
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
-        };
-
-        TENKEY {
-            bindings = <
-&none   &none   &none   &none   &none                        &kp KP_SLASH     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_ASTERISK
-&none   &none   &none   &none   &none             &none      &kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS
-&none   &none   &none   &none   &none   &none     &none      &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LANG1  &kp LANG2                                                           &kp KP_ENTER
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
