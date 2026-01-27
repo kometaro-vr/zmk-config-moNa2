@@ -34,7 +34,7 @@
         };
 
         trackball_scroll {
-            bindings = <&mo 8>;
+            bindings = <&mo 0>;
             key-positions = <30 31>;
         };
 
@@ -54,12 +54,12 @@
         };
 
         fnscroll-l {
-            bindings = <&mo 8>;
+            bindings = <&mo 0>;
             key-positions = <13 12>;
         };
 
         fnscroll-r {
-            bindings = <&mo 8>;
+            bindings = <&mo 0>;
             key-positions = <17 18>;
         };
 
@@ -181,9 +181,9 @@
         default_layer {
             bindings = <
 &kp Q    &kp W         &kp E         &kp R  &kp T                                    &kp Y      &kp U  &kp I     &kp O     &kp P
-&lt 3 A  &kp S         &kp D         &kp F  &kp G                     &mo 8          &kp H      &kp J  &kp K     &kp L     &lt 2 SEMICOLON
-&kp Z    &kp X         &kp C         &kp V  &kp B        &mo 8        &none          &kp N      &kp M  &mkp MB1  &mkp MB2  &kp SLASH
-&mo 4    &kp LEFT_WIN  &kp LEFT_ALT  &mo 6  &lt 8 SPACE  &kp LSHFT    &kp BACKSPACE  &kp ENTER                             &kp DEL
+&kp A    &kp S         &kp D         &kp F  &kp G                     &none          &kp H      &kp J  &kp K     &kp L     &kp SEMICOLON
+&lt 2 Z  &kp X         &kp C         &kp V  &kp B        &none        &none          &kp N      &kp M  &mkp MB1  &mkp MB2  &lt 1 SLASH
+&mo 3    &kp LEFT_WIN  &kp LEFT_ALT  &mo 8  &lt 4 SPACE  &kp LSHFT    &kp BACKSPACE  &kp ENTER                             &kp DEL
             >;
 
             sensor-bindings =
@@ -191,32 +191,21 @@
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        MOUSE {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
-        };
-
         HRM_R {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans       &trans      &trans         &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mt RCTRL J  &mt RALT K  &mt_rt RGUI L  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans      &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                          &trans
+&trans  &trans  &trans  &trans  &trans                    &trans      &trans       &trans       &trans         &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &mt RGUI H  &mt RCTRL J  &mt RSHFT K  &mt_rt RALT L  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans       &trans       &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                               &trans
             >;
         };
 
         HRM_L {
             bindings = <
-&trans  &trans      &trans      &trans       &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &mt LGUI S  &mt LALT D  &mt LCTRL F  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans      &trans       &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans      &trans       &trans  &trans    &trans  &trans                          &trans
+&trans  &trans      &trans        &trans       &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &mt LALT S  &mt LSHIFT D  &mt LCTRL F  &kp LGUI            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans        &trans       &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans        &trans       &trans    &trans    &trans  &trans                          &trans
             >;
         };
 
@@ -233,10 +222,32 @@
 
         layer_2 {
             bindings = <
-&kp EXCLAMATION  &kp DQT    &kp HASH   &kp DOLLAR  &kp PERCENT                        &kp AMPERSAND  &kp PIPE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&kp QUESTION     &kp SQT    &kp EQUAL  &kp TILDE   &kp UNDERSCORE            &trans   &kp MINUS      &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN
-&none            &kp GRAVE  &none      &none       &kp CARET       &trans    &trans   &kp PLUS       &kp ASTERISK      &kp COMMA             &kp PERIOD             &kp SLASH
-&trans           &trans     &trans     &trans      &trans          &trans    &kp DEL  &none                                                                         &trans
+&kp EXCLAMATION  &kp DQT    &kp HASH   &kp DOLLAR  &kp PERCENT                       &kp AMPERSAND  &kp PIPE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&kp QUESTION     &kp SQT    &kp EQUAL  &kp TILDE   &kp UNDERSCORE            &trans  &kp MINUS      &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN
+&none            &kp GRAVE  &none      &none       &kp CARET       &trans    &trans  &kp PLUS       &kp ASTERISK      &kp COMMA             &kp PERIOD             &kp SLASH
+&trans           &trans     &trans     &trans      &trans          &trans    &trans  &none                                                                         &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
+        };
+
+        MOUSE {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        SCROLL {
+            bindings = <
+&kp EXCLAMATION  &kp DQT    &kp HASH   &kp DOLLAR  &kp PERCENT                              &kp AMPERSAND  &kp PIPE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&kp QUESTION     &kp SQT    &kp EQUAL  &kp TILDE   &kp UNDERSCORE            &trans         &kp MINUS      &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN
+&none            &kp GRAVE  &none      &none       &kp CARET       &trans    &trans         &kp PLUS       &kp ASTERISK      &kp COMMA             &kp PERIOD             &kp SLASH
+&trans           &trans     &trans     &trans      &trans          &trans    &kp LC(SPACE)  &none                                                                         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
@@ -262,17 +273,6 @@
             >;
 
             sensor-bindings = <&scroll_up_down>;
-        };
-
-        SCROLL {
-            bindings = <
-&kp EXCLAMATION  &kp DQT    &kp HASH   &kp DOLLAR  &kp PERCENT                              &kp AMPERSAND  &kp PIPE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&kp QUESTION     &kp SQT    &kp EQUAL  &kp TILDE   &kp UNDERSCORE            &trans         &kp MINUS      &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN
-&none            &kp GRAVE  &none      &none       &kp CARET       &trans    &trans         &kp PLUS       &kp ASTERISK      &kp COMMA             &kp PERIOD             &kp SLASH
-&trans           &trans     &trans     &trans      &trans          &trans    &kp LC(SPACE)  &none                                                                         &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
     };
 };
