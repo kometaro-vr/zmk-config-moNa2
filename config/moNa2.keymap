@@ -180,10 +180,10 @@
 
         default_layer {
             bindings = <
-&kp Q  &kp W         &kp E         &kp R  &kp T                                      &kp Y      &kp U  &kp I     &kp O     &kp P
-&kp A  &kp S         &kp D         &kp F  &kp G                     &mo 8            &kp H      &kp J  &kp K     &kp L     &kp SEMICOLON
-&kp Z  &kp X         &kp C         &kp V  &kp B        &mo 8        &none            &kp N      &kp M  &mkp MB1  &mkp MB2  &kp SLASH
-&mo 3  &kp LEFT_WIN  &kp LEFT_ALT  &mo 5  &lt 8 SPACE  &lt 2 TAB    &lt 1 BACKSPACE  &kp ENTER                             &kp DEL
+&kp Q    &kp W         &kp E         &kp R  &kp T                                    &kp Y      &kp U  &kp I     &kp O     &kp P
+&lt 3 A  &kp S         &kp D         &kp F  &kp G                     &mo 8          &kp H      &kp J  &kp K     &kp L     &lt 2 SEMICOLON
+&kp Z    &kp X         &kp C         &kp V  &kp B        &mo 8        &none          &kp N      &kp M  &mkp MB1  &mkp MB2  &kp SLASH
+&mo 4    &kp LEFT_WIN  &kp LEFT_ALT  &mo 6  &lt 8 SPACE  &kp LSHFT    &kp BACKSPACE  &kp ENTER                             &kp DEL
             >;
 
             sensor-bindings =
@@ -191,21 +191,32 @@
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
+        MOUSE {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
         HRM_R {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans       &trans        &trans         &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mt RCTRL J  &mt RSHIFT K  &mt_rt RALT L  &mt RGUI SEMICOLON
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans        &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                            &trans
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans       &trans      &trans         &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &mt RCTRL J  &mt RALT K  &mt_rt RGUI L  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans       &trans      &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                          &trans
             >;
         };
 
         HRM_L {
             bindings = <
-&trans      &trans      &trans        &trans       &trans                           &trans  &trans  &trans  &trans  &trans
-&mt LGUI A  &mt LALT S  &mt LSHIFT D  &mt LCTRL F  &trans            &trans         &trans  &trans  &trans  &trans  &trans
-&trans      &trans      &trans        &trans       &trans  &trans    &trans         &trans  &trans  &trans  &trans  &trans
-&trans      &trans      &trans        &trans       &trans  &trans    &kp BACKSPACE  &trans                          &trans
+&trans  &trans      &trans      &trans       &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &mt LGUI S  &mt LALT D  &mt LCTRL F  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans      &trans       &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans      &trans       &trans  &trans    &trans  &trans                          &trans
             >;
         };
 
@@ -248,17 +259,6 @@
 &none   &none   &none   &none   &none             &none      &kp KP_DOT       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS
 &none   &none   &none   &none   &none   &none     &none      &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS
 &trans  &trans  &trans  &trans  &trans  &trans    &kp LANG1  &kp LANG2                                                           &kp KP_ENTER
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
-        };
-
-        MOUSE {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
