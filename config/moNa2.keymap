@@ -195,7 +195,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans      &trans       &trans       &trans         &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &mt RGUI H  &mt RCTRL J  &mt RSHFT K  &mt_rt RALT L  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans       &trans       &trans         &trans
+&kp Z   &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans       &trans       &trans         &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                               &trans
             >;
         };
@@ -204,7 +204,7 @@
             bindings = <
 &trans  &trans      &trans        &trans       &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &mt LALT S  &mt LSHIFT D  &mt LCTRL F  &kp LGUI            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &trans        &trans       &trans    &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans        &trans       &trans    &trans    &trans  &trans  &trans  &trans  &trans  &kp SLASH
 &trans  &trans      &trans        &trans       &trans    &trans    &trans  &trans                          &trans
             >;
         };
