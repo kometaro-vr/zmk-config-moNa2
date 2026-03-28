@@ -183,7 +183,7 @@
 &kp Q  &kp W         &kp E         &kp R  &kp T                                        &kp Y      &kp U  &kp I     &kp O     &kp P
 &kp A  &kp S         &kp D         &kp F  &kp G                         &none          &kp H      &kp J  &kp K     &kp L     &mt RCTRL SEMI
 &kp Z  &kp X         &kp C         &kp V  &kp B        &trans           &none          &kp N      &kp M  &mkp MB1  &mkp MB2  &mt RALT SLASH
-&mo 1  &kp LEFT_WIN  &kp LEFT_ALT  &mo 2  &lt 6 SPACE  &mt LSHFT TAB    &kp BACKSPACE  &kp ENTER                             &kp DEL
+&mo 1  &kp LEFT_WIN  &kp LEFT_ALT  &mo 2  &lt 3 SPACE  &mt LSHFT TAB    &kp BACKSPACE  &kp ENTER                             &kp DEL
             >;
 
             sensor-bindings =
@@ -213,6 +213,17 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
+        SCROLL {
+            bindings = <
+&kp EXCLAMATION  &kp DQT    &kp HASH   &kp DOLLAR  &kp PERCENT                              &kp AMPERSAND  &kp PIPE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&kp QUESTION     &kp SQT    &kp EQUAL  &kp TILDE   &kp UNDERSCORE            &trans         &kp MINUS      &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN
+&none            &kp GRAVE  &none      &none       &kp CARET       &trans    &trans         &kp PLUS       &kp ASTERISK      &kp COMMA             &kp PERIOD             &kp SLASH
+&trans           &trans     &trans     &trans      &trans          &trans    &kp LC(SPACE)  &none                                                                         &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
+        };
+
         HRM_R {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
@@ -240,17 +251,6 @@
             >;
 
             sensor-bindings = <&scroll_up_down>;
-        };
-
-        SCROLL {
-            bindings = <
-&kp EXCLAMATION  &kp DQT    &kp HASH   &kp DOLLAR  &kp PERCENT                              &kp AMPERSAND  &kp PIPE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&kp QUESTION     &kp SQT    &kp EQUAL  &kp TILDE   &kp UNDERSCORE            &trans         &kp MINUS      &kp GREATER_THAN  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp AT_SIGN
-&none            &kp GRAVE  &none      &none       &kp CARET       &trans    &trans         &kp PLUS       &kp ASTERISK      &kp COMMA             &kp PERIOD             &kp SLASH
-&trans           &trans     &trans     &trans      &trans          &trans    &kp LC(SPACE)  &none                                                                         &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
         };
     };
 };
